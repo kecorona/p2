@@ -20,9 +20,28 @@ ini_set('display_errors', 1);
 
 	<div>
 		<div id="content">
-			<article class="article">
-				<header>
-					<h1>X KC D Style Password Generator</h1>
+
+			<form>
+				<fieldset>
+					<legend>X KC D Style Password Generator</legend>
+
+					<fieldset>
+						<legend>Presets</legend>
+						<input type="button" name="preset_1" id="preset_1" value="Preset 1">
+						<input type="button" name="preset_2" id="preset_2" value="Preset 2">
+						<input type="button" name="preset_3" id="preset_3" value="Preset 3">
+						<input type="button" name="preset_4" id="preset_4" value="Preset 4">
+						<input type="button" name="preset_5" id="preset_5" value="Preset 5">
+					</fieldset>
+
+					<fieldset>
+						<legend>Words</legend>
+						<label for="num_words">Number of words:</label>
+						<select name="num_words" id="num_words">
+							<option value="1" selected="selected">1</option>
+							<option value="2" 
+					</fieldset>
+				</fieldset>
 
 	<!-- Print the contestant array -->
 	<?
