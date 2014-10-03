@@ -2,7 +2,7 @@
 
 		$special = array('!', '@', '#', '$', '^', '&', '*');
 
-		if($word_list = file("dict/words", FILE_IGNORE_NEW_LINES)) {
+		if($word_list = file("words.txt", FILE_IGNORE_NEW_LINES)) {
 			$password = "";
 			$count = (empty($_POST["word_count"]) ? 4 : $_POST["word_count"]);
 			for ($i = 0; $i < $count; $i++) {
