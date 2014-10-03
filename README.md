@@ -1,5 +1,5 @@
 # Dynamic Web Applications
-===========================
+----------------------------
 
 ## Project 2 -- XKCD Style Random Password Generator
 -----------------------------------------------------
