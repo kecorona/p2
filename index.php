@@ -1,13 +1,12 @@
 <?php
-error_reporting(-1); # Report all PHP errors
-ini_set('display_errors', 1);
+require 'logic.php';
+session_unset(); 
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Password Generator</title>
-	<!-- ?php require 'controller.php'; ? -->
 </head>
 
 <body>
@@ -21,27 +20,27 @@ ini_set('display_errors', 1);
 	<div>
 		<div id="content">
 
-			<form>
+			<form method="post" action="./">
 				<fieldset>
 					<legend>X KC D Style Password Generator</legend>
 
 					<fieldset>
-						<legend>Presets</legend>
-						<input type="button" name="preset_1" id="preset_1" value="Preset 1">
-						<input type="button" name="preset_2" id="preset_2" value="Preset 2">
-						<input type="button" name="preset_3" id="preset_3" value="Preset 3">
-						<input type="button" name="preset_4" id="preset_4" value="Preset 4">
-						<input type="button" name="preset_5" id="preset_5" value="Preset 5">
-					</fieldset>
-
-					<fieldset>
 						<legend>Words</legend>
+<<<<<<< HEAD
+						<label for="word_count">Number of words:</label>
+						<select name="word_count" id="word_count">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4" selected="selected">4</option>
+=======
 						<label for="num_words">Number of words:</label>
 						<select name="num_words" id="num_words">
 							<option value="1" selected="selected">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
 							<option value="4">4</option>
+>>>>>>> eb4fe7d062aba58fe6c4f4eb2d0a0f2a007156b4
 							<option value="5">5</option>
 							<option value="6">6</option>
 							<option value="7">7</option>
@@ -49,6 +48,16 @@ ini_set('display_errors', 1);
 
 						<br>
 
+<<<<<<< HEAD
+						<div class="row">
+							<div class="col-xs-6 col-md-4">
+								<h3>Characters:</h3>
+								<div class="checkbox">
+								  <span><input type="checkbox" name="lowercase" value="lowercase">lowercase</span>
+								  <span><input type="checkbox" name="uppercase" value="uppercase">uppercase</span>
+								  <span><input type="checkbox" name="numeric" value="numeric">numeric</span>
+								  <span><input type="checkbox" name="special" value="special">special characters</span>
+=======
 						<h5>Word length</h5>
 						<label for="min_word_length">min:</label>
 						<select name="min_word_length" id="min_word_length">
@@ -88,24 +97,45 @@ ini_set('display_errors', 1);
 								  <span><input type="radio" name="case_trans" value="upperCase">UPPER CASE</span>
 								  <span><input type="radio" name="case_trans" value="lowerCase">LOWER CASE</span>
 								  <span><input type="radio" name="case_trans" value="alt">ALTERNATE CASE</span>
+>>>>>>> eb4fe7d062aba58fe6c4f4eb2d0a0f2a007156b4
 								</div>
 							</div>
 						</div>
 					</fieldset>
 
 					<div class="container">
+<<<<<<< HEAD
+						<input type="submit" id="gen_password" name="gen_password" value="Generate Password">
+=======
 						<input type="button" id="gen_password" name="gen_password" value="Generate Password">
+>>>>>>> eb4fe7d062aba58fe6c4f4eb2d0a0f2a007156b4
 						<input type="hidden" id="iHateIE" name="iHateIE" value="1412289092666">
 					</div>
 
 					<div class="container" id="password_container">
+<<<<<<< HEAD
+						<span id="password_label"></span>
+						<span id="password_display">
+							<?php echo "$password" ?>
+							<?php echo htmlspecialchars($key, ENT_QUOTES, 'UTF-8'); ?>							
+						</span>
+=======
 						<span id="password_label">Generated Password:</span>
 						<span id="password_display"></span>
+>>>>>>> eb4fe7d062aba58fe6c4f4eb2d0a0f2a007156b4
 					</div>
 				</fieldset>
 			</form>
 		</div>
 	</div>
+<<<<<<< HEAD
+
+	<?php
+
+	session_destroy();
+
+	?>
+=======
 
 	<!-- Print the contestant array -->
 	<!--?
@@ -115,6 +145,7 @@ ini_set('display_errors', 1);
 	$aRandomSelection = $originalArray[$pickOne ];
 	echo "$aRandomSelection was the random selection made";
 	?-->
+>>>>>>> eb4fe7d062aba58fe6c4f4eb2d0a0f2a007156b4
 
 </body>
 </html>
